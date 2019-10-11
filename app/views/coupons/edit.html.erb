@@ -1,0 +1,11 @@
+<h1>Editing Coupon</h1>
+
+
+<%= form_tag coupon_path(@coupon) do %>
+    <%= text_field_tag 'coupon_code' %>
+    <%= text_field_tag 'store' %>
+    <%= submit_tag 'Submit Edits' %>
+<% end %>
+
+<%= link_to 'Show', @coupon %> |
+<%= link_to 'Back', coupons_path %>
